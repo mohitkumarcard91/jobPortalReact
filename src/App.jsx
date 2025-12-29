@@ -3,7 +3,7 @@ import Location from "./pages/Location";
 import JobLayout from "./pages/JobLayout";
 import Personal from "./pages/Personal";
 import Position from "./pages/Position";
-import Final from "./pages/final";
+import Final from "./pages/Final";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ProfilePage from "./pages/ProfilePage";

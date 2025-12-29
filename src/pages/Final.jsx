@@ -10,6 +10,11 @@ const Final = () => {
     localStorage.removeItem("position");
     localStorage.removeItem("personal");
   }, []);
+
+    const handleClick = () => {
+    resetSteps();
+    router.replace("/");
+  };
   return (
     <div className="flex flex-col flex-1 justify-center items-center">
       <ThumbsUp className="text-yellow-500 stroke-current stroke-2 w-52 h-52" />
@@ -19,6 +24,13 @@ const Final = () => {
           We've received your application!
         </p>
         <p>We will process it and reach out to you in a days</p>
+         <button
+          onClick={handleClick}
+          type="submit"
+          className={`px-6 h-[44px] rounded-md text-white transition bg-slate-800  hover:text-black hover:bg-white hover:border hover:border-black`}
+        >
+          Exit
+        </button>
       </div>
     </div>
   );
